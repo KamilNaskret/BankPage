@@ -1,0 +1,39 @@
+.offerts{
+    min-height:60vh;
+    background-color: hsl(220, 16%, 96%);
+    &__informations{
+        height:40%;
+        padding:50px;
+        &-title{
+            font-size:$fontSize*2.5;
+            font-weight:400;
+            color:hsl(233, 8%, 20%);
+            margin-bottom:25px;
+        }
+        &-desc{
+            width:50%;
+            line-height:200%;
+            color: hsl(233, 8%, 55%);
+        }
+    }
+    &__container{
+        min-height:35vh;
+        display:flex;
+        margin-top:20px;
+        padding:0 50px;
+        
+    }
+    &__offert{
+        flex-grow:1;
+        padding:20px;
+        &-title{
+            font-size:$fontSize*1.5;
+            font-weight:400;
+            color:hsl(233, 8%, 20%);
+            margin:15px 0;
+        }
+        &-desc{
+            color: hsl(233, 8%, 55%);
+        }
+    }
+}

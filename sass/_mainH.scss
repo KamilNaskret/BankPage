@@ -1,0 +1,38 @@
+.main{
+    min-height:80vh;
+    display:flex;
+    background-color: hsl(0, 0%, 98%);
+    &__description{
+        flex-basis:40%;
+        display:flex;
+        @include flex(row,center,center);
+    }
+    &__middle{
+        width:80%;
+        height:50%;
+        &-title{
+            font-size:$fontSize*2.5;
+            font-weight:400;
+            color:hsl(233, 8%, 30%);
+            margin-bottom:15px;
+        }
+        &-informations{
+            color: hsl(233, 8%, 55%);
+            margin-bottom:20px;
+        }
+        &-btn{
+            @include btn();
+        }
+
+    }
+    &__images{
+        position:relative;
+        flex-basis:60%;
+        background-image:url("../../images/bg-intro-desktop.svg");
+        background-position: 0% 60%;
+        img{
+            width:100%;
+            height:120%;
+        }
+    }
+}
