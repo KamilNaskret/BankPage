@@ -123,14 +123,15 @@
         left:0;
         width:100%;
         z-index:1;
-        height:25vh;
+        height:50vh;
+        background-color: #1c1641;
     }
     .header__nav .nav__list{
         flex-direction: column;
         align-items:stretch;
         justify-content: center;
         height:100%;
-        background-color: #1c1641;
+        z-index:1;
     }
     .header__nav .nav__item{
         height:10vh;
